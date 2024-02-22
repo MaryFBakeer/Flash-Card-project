@@ -3,7 +3,7 @@ const router = require('express').Router();
 // views
 
 const mainRouter = require('./main.router.js');
-// const booksViewRouter = require('./views/books.view.router');
+const themesViewRouter = require('./views/themes.view.router');
 // const authViewRouter = require('./views/auth.view.router');
 
 // api
@@ -14,7 +14,7 @@ const mainRouter = require('./main.router.js');
 // route views
 
 router.use('/', mainRouter);
-// router.use('/auth', authViewRouter);
+router.use('/themes', themesViewRouter);
 // router.use('/books', booksViewRouter);
 
 // route api
