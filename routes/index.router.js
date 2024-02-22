@@ -4,7 +4,7 @@ const router = require('express').Router();
 
 const mainRouter = require('./views/main.router');
 const themesViewRouter = require('./views/themes.view.router');
-// const authViewRouter = require('./views/auth.view.router');
+const quizePageRouter = require('./views/quizePage.router.view');
 
 // api
 
@@ -15,7 +15,7 @@ const themesViewRouter = require('./views/themes.view.router');
 
 router.use('/', mainRouter);
 router.use('/themes', themesViewRouter);
-// router.use('/books', booksViewRouter);
+router.use('/themes', quizePageRouter);
 
 // route api
 
