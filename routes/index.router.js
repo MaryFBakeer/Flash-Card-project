@@ -2,7 +2,7 @@ const router = require('express').Router();
 
 // views
 
-const mainRouter = require('./main.router.js');
+const mainRouter = require('./views/main.router');
 const themesViewRouter = require('./views/themes.view.router');
 // const authViewRouter = require('./views/auth.view.router');
 
