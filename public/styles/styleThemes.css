@@ -1,34 +1,56 @@
 .themes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.themes h1{
-    font-size: 40px;
-    margin: 30px;
+.themes h1 {
+  font-size: 40px;
+  margin: 30px;
 }
 
-.themeBut{
-    font-size: 45px;
-    color: #FFFFFF;
-    background-color: #520079;
-    margin: 30px;
-    width: 500px;
-    display: flex;
-    justify-content: center;
-    border-radius: 40px;
-    box-shadow: 4px 4px 4px 1px rgba(1, 1, 61, 0.2);
-    
+.themeBut {
+  font-size: 45px;
+  color: #ffffff;
+  background-color: #520079;
+  margin: 30px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  border-radius: 40px;
+  box-shadow: 4px 4px 4px 1px rgba(1, 1, 61, 0.2);
 }
 
 .themeBut a {
-    color: #FFFFFF;
-    text-decoration: none;
-    margin: 20px;
-    text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 20px;
+  text-align: center;
 }
 
-.themeBut:hover{
-    background-color: #a206eb;
+.themeBut:hover {
+  background-color: #75488a;
 }
 
+@keyframes bounce {
+  0%,
+  20%,
+  60%,
+  100% {
+    transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  80% {
+    transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
+.themeBut:hover {
+  animation: bounce 1s;
+}
