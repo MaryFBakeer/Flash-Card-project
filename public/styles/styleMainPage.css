@@ -11,9 +11,10 @@
 }
 
 .reg-form input {
+    font-size: 22px;
     margin: 10%;
     width: 250px;
-    height: 30px;
+    height: 50px;
     border-radius: 10px;
     background-color: #fcf0fc;
     box-shadow: 2px 2px 2px 1px rgba(1, 1, 61, 0.2);
@@ -24,8 +25,12 @@
     padding: 0 10px;
 }
 
+.reg-form button:hover{
+    background-color: #a206eb;
+}
+
 .registr {
-    font-size: 16px;
+    font-size: 25px;
     color: #FFFFFF;
     background-color: #520079;
     margin: 10px;
@@ -33,3 +38,4 @@
     border-radius: 40px;
     box-shadow: 2px 2px 2px 1px rgba(1, 1, 61, 0.2);
 }
+

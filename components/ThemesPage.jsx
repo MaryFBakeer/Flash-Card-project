@@ -1,16 +1,17 @@
 const React = require('react');
 const Layout = require('./Layout');
 
-function ThemesPage({ title, user, themes, question }) {
-  // {let question.id = 1}
+function ThemesPage({ title, user, themes }) {
   return (
     <Layout title={title} user={user}>
-      <h1>Выбери тему квиза</h1>
-      {themes.map((theme) => (
-        <div>
-          <a href={`/questions/${theme.id}`}>{theme.themeName}</a>
-        </div>
-      ))}
+      <div className="themes">
+        <h1>Выбери тему квиза</h1>
+        {themes.map((theme) => (
+          <div className="themeBut">
+            <a href={`/questions/${theme.id}`}>{theme.themeName}</a>
+          </div>
+        ))}
+      </div>
     </Layout>
   );
 }

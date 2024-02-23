@@ -44,4 +44,40 @@ body{
     color: #2b0047;
 }
 
+.nameButton{
+    background-color: #652E80;
+    color: #FFFFFF;
+    border-radius: 40px;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.nameButton a {
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.nameButton a:hover {
+    color: #2b0047;
+}
+
+.scoreButton{
+    /* background-color: #652E80; */
+    color: #FFFFFF;
+    border-radius: 40px;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+}
+
+
+.scoreButton a:hover {
+    color: #2b0047;
+}
+
 

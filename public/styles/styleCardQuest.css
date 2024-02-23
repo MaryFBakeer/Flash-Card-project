@@ -1,0 +1,70 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card p {
+  margin: 3%;
+  font-size: 50px;
+}
+
+.answerForm {
+  display: flex;
+  align-items: center;
+  margin: 42px auto 22px;
+  width: 400px;
+  height: 55px;
+  border-radius: 10px;
+  background-color: #fcf0fc;
+  box-shadow: 2px 2px 2px 1px rgba(1, 1, 61, 0.2);
+  border: 2px solid #520079;
+}
+.answerForm input {
+  width: 209px;
+  height: 25px;
+  margin: 16px auto 14px 21px;
+  border: transparent;
+  background-color: #fcf0fc;
+}
+
+::placeholder {
+  font-size: 25px;
+  letter-spacing: -0.9px;
+  width: 209px;
+  height: 24.64px;
+}
+
+.answerForm input :active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.answerForm button {
+  text-align: center;
+  width: 80px;
+  color: #ffff;
+  height: 35px;
+  padding: 0px 12px 5px 12px;
+  border-radius: 8px;
+  background: #520079;
+  margin: 9px 8px;
+}
+
+.dopMessage{
+    color: green;
+    font-size: 35px;
+}
+
+
+.card a {
+    background-color: #520079;
+    border-radius: 50px;
+    color: #FFFFFF;
+    padding: 15px 25px;
+    text-decoration: none;
+    margin: 20px;
+    text-align: center;
+}

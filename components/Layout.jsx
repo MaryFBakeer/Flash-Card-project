@@ -9,7 +9,9 @@ function Layout({ title, children, user }) {
         <link rel="stylesheet" href="/styles/normalize.css.css" />
         <link rel="stylesheet" href="/styles/style.css" />
         <link rel="stylesheet" href="/styles/styleMainPage.css" />
-        <script defer src="/scripts/script.js" />
+        <link rel="stylesheet" href="/styles/styleThemes.css" />
+        <link rel="stylesheet" href="/styles/styleCardQuest.css" />
+        <script defer src="/scripts/answerScript.js" />
       </head>
       <body>
         <Navbar user={user} />
