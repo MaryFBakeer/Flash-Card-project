@@ -4,13 +4,16 @@ function CardQuestion({
   question,
 }) {
   return (
-    <p>{question.question}</p>
     <div>
-      <input type="text" name="answers" placeholder="answer" required />
-      <button>
-        ОК
-      </button>
+      <p>{question.question}</p>
+      <div>
+        <input type="text" name="answers" placeholder="answer" required />
+        <button>
+          ОК
+        </button>
+      </div>
     </div>
+
   );
 }
 
