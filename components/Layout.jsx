@@ -11,6 +11,7 @@ function Layout({ title, children, user }) {
         <link rel="stylesheet" href="/styles/styleMainPage.css" />
         <link rel="stylesheet" href="/styles/styleThemes.css" />
         <link rel="stylesheet" href="/styles/styleCardQuest.css" />
+        <link rel="stylesheet" href="/styles/styleBackground.css" />
         <script defer src="/scripts/answerScript.js" />
       </head>
       <body>
