@@ -12,17 +12,18 @@ module.exports = {
         allowNull: false,
         type: Sequelize.INTEGER,
         references: {
-
           model: 'QuizeThemes',
 
           key: 'id',
-
         },
 
         onDelete: 'Cascade',
-
       },
       question: {
+        allowNull: false,
+        type: Sequelize.TEXT,
+      },
+      img: {
         allowNull: false,
         type: Sequelize.TEXT,
       },
