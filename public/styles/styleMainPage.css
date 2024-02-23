@@ -1,0 +1,35 @@
+.main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.reg-form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.reg-form input {
+    margin: 10%;
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #fcf0fc;
+    box-shadow: 2px 2px 2px 1px rgba(1, 1, 61, 0.2);
+    border: 2px solid #520079;
+}
+
+.reg-form input[type]{
+    padding: 0 10px;
+}
+
+.registr {
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #520079;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 40px;
+    box-shadow: 2px 2px 2px 1px rgba(1, 1, 61, 0.2);
+}

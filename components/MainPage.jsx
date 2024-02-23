@@ -4,20 +4,21 @@ const Layout = require('./Layout');
 function MainPage({ title }) {
   return (
     <Layout title={title}>
-      <>
-        <h1>MainPage</h1>
+      <div className="main">
+        <h1>Добро пожаловать, дорогой гость!</h1>
+        <h2>Зарегистрируйся и сыграй в наш квиз “Мы так и знали!”</h2>
         <form className="reg-form" action="/" method="POST">
           <input type="text" name="name" placeholder="name" required />
+          <input type="email" name="email" placeholder="email" required />
           <input
             type="password"
             name="password"
             placeholder="password"
             required
           />
-          <input type="email" name="email" placeholder="email" required />
-          <button>Submit</button>
+          <button className="registr">Регистрация</button>
         </form>
-      </>
+      </div>
     </Layout>
   );
 }
