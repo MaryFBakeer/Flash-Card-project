@@ -2,7 +2,7 @@ const router = require('express').Router();
 const QuizePage = require('../../components/QuizePage');
 const { Quize } = require('../../db/models');
 
-router.get('/:id/', async (req, res) => {
+router.get('/:id', async (req, res) => {
   try {
     const { id } = req.params;
     const quest = await Quize.findOne({ where: { themeId: id } });
@@ -31,8 +31,6 @@ router.get('/:id/:questId', async (req, res) => {
   } catch ({ message }) {
     res.redirect('/themes');
   }
-
-  // console.log(id, questid);
 });
 
 module.exports = router;

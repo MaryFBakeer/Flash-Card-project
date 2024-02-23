@@ -7,9 +7,9 @@ const themesViewRouter = require('./views/themes.view.router');
 const quizePageRouter = require('./views/quizePage.router.view');
 
 // api
-
-// const booksApiRouter = require('./api/books.api.router');
+const quizeApiRouter = require('./api/apiQuize.route');
 // const authApiRouter = require('./api/auth.api.router');
+router.use('/api', quizeApiRouter);
 
 // route views
 
