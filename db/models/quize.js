@@ -1,41 +1,41 @@
-const {
-  Model,
-} = require('sequelize');
+const { Model } = require('sequelize');
 
 module.exports = (sequelize, DataTypes) => {
   class Quize extends Model {
-
-    static associate({QuizeTheme}) {
+    static associate({ QuizeTheme }) {
       this.belongsTo(QuizeTheme, { foreignKey: 'themeId' });
-
     }
   }
-  Quize.init({
-    themeId: {
-      allowNull: false,
-      type: DataTypes.INTEGER,
-      references: {
+  Quize.init(
+    {
+      themeId: {
+        allowNull: false,
+        type: DataTypes.INTEGER,
+        references: {
+          model: 'QuizeThemes',
 
-        model: 'QuizeThemes',
+          key: 'id',
+        },
 
-        key: 'id',
-
+        onDelete: 'Cascade',
       },
-
-      onDelete: 'Cascade',
-
+      question: {
+        allowNull: false,
+        type: DataTypes.TEXT,
+      },
+      img: {
+        allowNull: false,
+        type: DataTypes.TEXT,
+      },
+      answers: {
+        allowNull: false,
+        type: DataTypes.TEXT,
+      },
     },
-    question: {
-      allowNull: false,
-      type: DataTypes.TEXT,
-    },
-    answers: {
-      allowNull: false,
-      type: DataTypes.TEXT,
-    },
-  }, {
-    sequelize,
-    modelName: 'Quize',
-  });
+    {
+      sequelize,
+      modelName: 'Quize',
+    }
+  );
   return Quize;
 };

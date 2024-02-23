@@ -3,20 +3,21 @@ module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.bulkInsert(
       'QuizeThemes',
-      [{
-        themeName: 'Cars',
-        createdAt: new Date(),
+      [
+        {
+          themeName: 'Звездные войны',
+          createdAt: new Date(),
 
-        updatedAt: new Date(),
-      },
-      {
-        themeName: 'Sport',
-        createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          themeName: 'Угадай флаг',
+          createdAt: new Date(),
 
-        updatedAt: new Date(),
-      },
+          updatedAt: new Date(),
+        },
       ],
-      {},
+      {}
     );
   },
 
