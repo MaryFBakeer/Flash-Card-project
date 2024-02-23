@@ -12,12 +12,16 @@ function CardQuestion({ question }) {
       <div className="footer">
         <form className="answerForm" action="/api/question" method="post">
           <input type="text" name="answers" placeholder="answer" required />
-          <button type="submit">ОК</button>
+          <button className="OKbut" type="submit">ОК</button>
         </form>
-        <a className="buttonDalee" href={`/questions/${question.themeId}/${question.id + 1}`}>Далее</a>
+        <a
+          className="buttonDalee"
+          href={`/questions/${question.themeId}/${question.id + 1}`}
+        >
+          Далее
+        </a>
       </div>
     </div>
-
   );
 }
 
