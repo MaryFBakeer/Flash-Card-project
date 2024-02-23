@@ -5,6 +5,7 @@ const router = require('express').Router();
 const mainRouter = require('./views/main.router');
 const themesViewRouter = require('./views/themes.view.router');
 const quizePageRouter = require('./views/quizePage.router.view');
+const errRouter = require('./views/err.router');
 
 // api
 const quizeApiRouter = require('./api/apiQuize.route');
@@ -16,6 +17,7 @@ router.use('/api', quizeApiRouter);
 router.use('/', mainRouter);
 router.use('/themes', themesViewRouter);
 router.use('/questions', quizePageRouter);
+router.use('/*', errRouter);
 
 // route api
 
