@@ -29,23 +29,23 @@ body {
 
 @keyframes theme {
   0% {
-    background: #f2daff;
+    background: #ecc8ff;
   }
 
   16% {
-    background: #d7b5fd;
+    background: #e3d1f7;
   }
 
   33% {
-    background: #f2daff;
+    background: #a77cbe;
   }
 
   50% {
-    background: #d7b5fd;
+    background: #c6b3db;
   }
 
   66% {
-    background: #f2daff;
+    background: #e3b0ff;
   }
 
   83% {

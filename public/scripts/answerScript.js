@@ -21,9 +21,9 @@ if (answerForm) {
     // console.log(resData, 777777777777777777777777);
     if (resData.message === 'success') {
       answerForm.reset();
-      dopMessage.innerHTML = 'Верняк';
+      dopMessage.innerHTML = 'О да! Ты крут!';
     } else {
-      dopMessage.innerHTML = 'хорошая попытка';
+      dopMessage.innerHTML = 'Иди учи матчасть';
     }
   });
 }

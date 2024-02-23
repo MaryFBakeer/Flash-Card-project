@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Page404 = ({ img }) => {
+function Page404({ img }) {
   return (
     <div>
-      <img src={img} alt='picture' />
+      <img className="asd" src={img} alt="picture" />
     </div>
   );
-};
+}
 
 export default Page404;
