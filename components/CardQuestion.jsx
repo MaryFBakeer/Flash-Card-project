@@ -4,7 +4,10 @@ function CardQuestion({ question }) {
   // console.log(question);
   return (
     <div>
-      <p>{question.question}</p>
+      <div>
+        <p>{question.question}</p>
+        <img clasName='img-card' src={question.img} />
+      </div>
       <div>
         <input type='text' name='answers' placeholder='answer' required />
         <button>ОК</button>
