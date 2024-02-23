@@ -6,7 +6,9 @@ function Layout({ title, children, user }) {
     <html lang="en">
       <head>
         <title>{title}</title>
+        <link rel="stylesheet" href="/styles/normalize.css.css" />
         <link rel="stylesheet" href="/styles/style.css" />
+        <link rel="stylesheet" href="/styles/styleMainPage.css" />
         <script defer src="/scripts/script.js" />
       </head>
       <body>
