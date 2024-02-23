@@ -15,7 +15,7 @@ const quizePageRouter = require('./views/quizePage.router.view');
 
 router.use('/', mainRouter);
 router.use('/themes', themesViewRouter);
-router.use('/themes', quizePageRouter);
+router.use('/questions', quizePageRouter);
 
 // route api
 
