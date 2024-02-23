@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background: #F3E0FF ;
+}
+
+.navbar {
+    background-color: #7960BE;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imgLogo {
+    width: 30%;
+}
+
+.buttonNav {
+    display: flex;
+    justify-content: center;
+}
+
+.topGamersButton{
+    background-color: #652E80;
+    color: #FFFFFF;
+    border-radius: 40px;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.topGamersButton a {
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.topGamersButton a:hover {
+    color: #2b0047;
+}
+
+.nameButton{
+    background-color: #652E80;
+    color: #FFFFFF;
+    border-radius: 40px;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.nameButton a {
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.nameButton a:hover {
+    color: #2b0047;
+}
+
+.scoreButton{
+    /* background-color: #652E80; */
+    color: #FFFFFF;
+    border-radius: 40px;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+}
+
+
+.scoreButton a:hover {
+    color: #2b0047;
+}
+
+.asd{   
+    width: 500px;
+}
